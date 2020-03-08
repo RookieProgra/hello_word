@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = C_Sourse/src/a.o testHellWorld.o
-LINKOBJ  = C_Sourse/src/a.o testHellWorld.o
+OBJ      = C_Sourse/src/a.o Test/testHellWorld.o Descript/文件描述.o C_Sourse/src/LinearList.o
+LINKOBJ  = C_Sourse/src/a.o Test/testHellWorld.o Descript/文件描述.o C_Sourse/src/LinearList.o
 LIBS     = -L"D:/Dev C++/Dev-Cpp/MinGW64/lib" -L"D:/Dev C++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/Dev C++/Dev-Cpp/MinGW64/include" -I"D:/Dev C++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/Dev C++/Dev-Cpp/MinGW64/include" -I"D:/Dev C++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -27,5 +27,8 @@ $(BIN): $(OBJ)
 C_Sourse/src/a.o: C_Sourse/src/a.c
 	$(CC) -c C_Sourse/src/a.c -o C_Sourse/src/a.o $(CFLAGS)
 
-testHellWorld.o: testHellWorld.c
-	$(CC) -c testHellWorld.c -o testHellWorld.o $(CFLAGS)
+Test/testHellWorld.o: Test/testHellWorld.c
+	$(CC) -c Test/testHellWorld.c -o Test/testHellWorld.o $(CFLAGS)
+
+C_Sourse/src/LinearList.o: C_Sourse/src/LinearList.c
+	$(CC) -c C_Sourse/src/LinearList.c -o C_Sourse/src/LinearList.o $(CFLAGS)

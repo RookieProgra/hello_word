@@ -1,4 +1,4 @@
-#include"./C_Sourse/inc/a.h"
+#include"../C_Sourse/inc/a.h"
 int main(void)
 {
 	printf("hello world.\n");
