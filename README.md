@@ -1,12 +1,4 @@
-# hello_word
-
-#include<stdio.h>
-
-int main()
-{
-  printf("This is first GitHub.");
-}
-
+该项目目前只用于学习GIT操作，写一些简单的算发
 
 
 
