@@ -1,7 +1,3 @@
-#include"a.h"
+#include "../inc/a.h"
 
-int main()
-{
-	
-	return 0;
-}
+
